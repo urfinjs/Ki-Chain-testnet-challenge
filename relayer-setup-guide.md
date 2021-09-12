@@ -6,7 +6,7 @@ Ki-Chain testnet task guide. This guide will cover relayer setup and examples of
 * Working Ki-Chain node
 * Working Umee node
 * Both nodes should have IBC-transfer enabled
-* Node operator should know and use appropriate flags --home for non-default directories and --node for non-default rpc-ports for each `<node> query` commands below
+* Node operator should know and use appropriate flags `--home=<path>` for non-default directories and `--node=<port>` for non-default rpc-ports for each `<node> query` commands below
 
 ### Basic Checks and Dependencies Setup
 check if nodes have IBC-transfer enabled \
