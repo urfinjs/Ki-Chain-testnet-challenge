@@ -1,14 +1,14 @@
-##Ki-Chain <> Umee Relayer Guide
+## Ki-Chain <> Umee Relayer Guide
 Ki-Chain testnet task guide. This guide will cover relayer setup and example of IBC transactions.
 
-###Requirements
+### Requirements
 * Ubuntu 20.04
 * Working Ki-Chain node
 * Working Umee node
 * Both nodes should have IBC-transfer enabled
 * Node operator should know and use appropriate flags --home for non-default directories and --node for non-default rpc-ports for each `<node> query` commands below
 
-###Basic Checks and Dependencies Setup
+### Basic Checks and Dependencies Setup
 check if nodes have IBC-transfer enabled \
 `kid q ibc-transfer params` \
 `umeed q ibc-transfer params`
@@ -30,7 +30,7 @@ if go version < 1.16.7 need to (re)install go
 result:
 >go version go1.17.1 linux/amd64
 
-###Install and Setup Relayer
+### Install and Setup Relayer
 relayer installation \
 `cd ~; git clone https://github.com/cosmos/relayer.git && cd relayer` \
 `make install && rly version`
@@ -229,7 +229,7 @@ result should contain:
 same check for umee_to_ki path (which should contain same output lines as above)
 `rly tx link umee_to_ki`
 
-###Transactions
+### Transactions
 Template for IBC transactions. \
 `rly transact transfer <source-chain> <destination-chain> <token-amount> <destination-chain-wallet-address> --path=<relayer-path-name>`
 
