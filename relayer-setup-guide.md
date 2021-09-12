@@ -1,5 +1,5 @@
 ## Ki-Chain <> Umee Relayer Guide
-Ki-Chain testnet task guide. This guide will cover relayer setup and example of IBC transactions.
+Ki-Chain testnet task guide. This guide will cover relayer setup and examples of IBC transactions.
 
 ### Requirements
 * Ubuntu 20.04
