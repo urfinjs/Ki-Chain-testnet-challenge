@@ -64,8 +64,8 @@ plz substitute <WALLET_NAME> with yours in lines below: \
 response should be your wallets names
 
 create new ki wallet \
-`rly keys add kichain-t-4 $KI_RELAYER_WALLET >> $KI_RELAYER_WALLET_mnemonics.txt
-echo 'export KI_RELAYER_ADDR='$( cat ${KI_RELAYER_WALLET}_mnemonics.txt | jq -r .address ) >> $HOME/.bash_profile && source $HOME/.bash_profile && echo $KI_RELAYER_ADDR` \
+`rly keys add kichain-t-4 $KI_RELAYER_WALLET >> $KI_RELAYER_WALLET_mnemonics.txt` \
+`echo 'export KI_RELAYER_ADDR='$( cat ${KI_RELAYER_WALLET}_mnemonics.txt | jq -r .address ) >> $HOME/.bash_profile && source $HOME/.bash_profile && echo $KI_RELAYER_ADDR` \
 response should be your ki wallet address
 
 create new umee wallet \
