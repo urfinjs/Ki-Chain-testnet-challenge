@@ -227,7 +227,7 @@ result should contain:
     Channel:      ✔
 ```
 
-same check for umee_to_ki path, which result also should contain lines above) \
+same check for umee_to_ki path, which result also should contain lines above \
 `rly tx link umee_to_ki`
 
 ### Transactions
@@ -237,7 +237,8 @@ Template for IBC transactions. \
 Recommend to send >= 1,000,000 tokens since there are reports that wallets doesn't show balance lesser than that amount.
 
 example transaction ki -> umee: \
-`rly tx transfer kichain-t-4 umee-betanet-1 1000001utki $UMEE_RELAYER_ADDR --path=ki_to_umee` \
+`rly tx transfer kichain-t-4 umee-betanet-1 1000001utki $UMEE_RELAYER_ADDR --path=ki_to_umee`
+
 result should contain one simple line which also contains tx hash (example):
 >I[2021-09-12|10:30:27.862] ✔ [kichain-t-4]@{295623} - msg(0:transfer) hash(758F78299589C38D60F055C49DB9B4C8298ABA8B595AE47412020984F6BF341F)
 
